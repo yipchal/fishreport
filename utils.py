@@ -17,7 +17,7 @@ def generate_report(tasks: str, selected_date: date) -> str:
 {tasks}
 """
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "你是一位精通写日报的 AI 职场秘书。"},
             {"role": "user", "content": prompt},
