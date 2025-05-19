@@ -1,8 +1,10 @@
 from openai import OpenAI
 from datetime import date
 import os
+import time
 from dotenv import load_dotenv
 
+time.sleep(2)
 # 加载环境变量
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
